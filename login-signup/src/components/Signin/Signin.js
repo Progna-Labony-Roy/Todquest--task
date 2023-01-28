@@ -13,7 +13,8 @@ const Signin = () => {
   const handleLogin = (data) => console.log(data);
 
   return (
-    <div className="main-div">
+  <div className="main-div">
+      <div className="inner-div">
       <div className="first-div">
         <img className="px-16" src={image} alt="" />
       </div>
@@ -55,10 +56,11 @@ const Signin = () => {
     </div>
     <div className="create-account">
     <p className="text-white text-xs font-semibold">Do you have an account yet?</p>
-      <p className="text-green text-xs font-semibold">Create an account</p>
+      <Link to='/signup'><p className="text-green text-xs font-semibold">Create an account</p></Link>
     </div>
       </div>
     </div>
+  </div>
   );
 };
 

@@ -1,9 +1,16 @@
 .main-div{
     background: #6A9A99;
-    height: 580px;
+    height: 580px;   
     width: 100%;
-    padding: 50px 150px;
+}
+
+.inner-div{
     display: flex;
+    justify-content: center;
+    align-items: center;
+   max-width: 75%;
+   margin:auto;
+   padding:  50px 0px;
 }
 
 .first-div{
@@ -61,4 +68,35 @@
 
 .text-green{
     color: #1E5861;
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    .main-div{
+        height: 1000px;
+        padding: 50px 100px;
+        flex-direction: column-reverse;
+    }
+
+    .first-div{
+        width: 500px; 
+    }
+
+    .first-div img{
+        margin-left: 65px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+    .main-div{
+        height: 550px;
+        padding: 30px 5%;
+        flex-direction: column-reverse;
+    }
+
+    .first-div{
+        display: none;
+    }
 }
