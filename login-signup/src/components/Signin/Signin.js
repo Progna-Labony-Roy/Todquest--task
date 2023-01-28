@@ -15,7 +15,7 @@ const Signin = () => {
   return (
     <div className="main-div">
       <div className="first-div">
-        <img src={image} alt="" />
+        <img className="px-16" src={image} alt="" />
       </div>
       <div className="second-div">
       <div className="flex justify-center my-10">
